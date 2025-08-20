@@ -1,4 +1,5 @@
 def optimize(x0,f,h,stop):
+    """ Newton's method to find a minimum"""
     # stop = 1e-2
     # h = 1e-4
     f0 = f(x0)
