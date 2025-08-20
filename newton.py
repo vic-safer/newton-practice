@@ -1,6 +1,6 @@
-def optimize(x0,f):
-    stop = 1e-2
-    h = 1e-4
+def optimize(x0,f,h,stop):
+    # stop = 1e-2
+    # h = 1e-4
     f0 = f(x0)
     df = (f(x0 + h) - f0) / h
     d2f = (f(x0 + h) - 2*f0 + f(x0 - h)) / (h**2)
